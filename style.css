@@ -3,7 +3,7 @@
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 10pt;
-    color: rgb(99, 99, 99);
+    color: rgb(85, 85, 85);
     text-decoration: none;
 }
 
@@ -65,6 +65,10 @@ a:hover {
     text-decoration: none;
 }
 
+.no-line:hover span {
+    color: black;
+}
+
 footer {
     border-top: 1px solid #dddddd;
     flex-shrink: 0;
@@ -81,11 +85,16 @@ figure {
     width: 100%;
     border-radius: 2em;
     border: 1px solid lightgrey;
-    height: 3em;
+    height: 45px;
     margin-bottom: 2em;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+#search-container:hover {
+    border: 1px solid white;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
 }
 
 #searchbar {
@@ -100,7 +109,7 @@ figure {
 #voice-icon {
     height: 50%;
     width: auto;
-    margin-right: 1em;
+    margin-right: 1.5em;
 }
 
 #profile img {
@@ -114,11 +123,13 @@ button {
     border: 1px solid #f2f2f2;
     border-radius: 5px;
     display: inline-block;
-    padding: 1em;
+    padding: 0.7em 1em 0.7em 1em;
     margin: 0.5em;
+    font-size: 1.1em;
 }
 
 button:hover {
+    color: black;
     border: 1px solid lightgrey;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
@@ -136,6 +147,6 @@ button:hover {
 }
 
 #content {
-    margin-top: 10%;
-    min-width: 500px;
+    margin-top: 100px;
+    min-width: 490px;
 }
