@@ -4,6 +4,12 @@
     font-family: Arial, Helvetica, sans-serif;
     font-size: 10pt;
     color: #333;
+    text-decoration: none;
+}
+
+img {
+    max-width: auto;
+    max-height: 100%;
 }
 
 html,
@@ -30,6 +36,7 @@ nav {
 li {
     display: inline;
     padding: 1em;
+    text-decoration: none;
 }
 
 footer {
@@ -43,12 +50,30 @@ figure {
     justify-content: center;
 }
 
-#searchbar {
+#search-container {
     width: 100%;
     border-radius: 2em;
     border: 1px solid lightgrey;
     height: 3em;
     margin-bottom: 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#searchbar {
+    border: none;
+}
+
+#search {
+    color: lightgrey;
+    margin-left: 0.5em;
+}
+
+#voice-icon {
+    height: 50%;
+    width: auto;
+    margin-right: 1em;
 }
 
 button {
